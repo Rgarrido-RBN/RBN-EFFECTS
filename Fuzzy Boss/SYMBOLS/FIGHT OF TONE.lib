@@ -1,0 +1,53 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# MountingHole_Pad
+#
+DEF MountingHole_Pad H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "MountingHole_Pad" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SW_DIP_4_2cases
+#
+DEF SW_DIP_4_2cases SW 0 40 Y Y 2 F N
+F0 "SW" -100 200 50 H V C CNN
+F1 "SW_DIP_4_2cases" 0 -200 50 H V C CNN
+F2 "" 0 450 50 H I C CNN
+F3 "" 0 450 50 H I C CNN
+DRAW
+C -80 -50 20 1 1 0 N
+C -80 50 20 1 1 0 N
+C 80 -50 20 1 1 0 N
+C 80 50 20 1 1 0 N
+C -80 -50 20 2 1 0 N
+C -80 50 20 2 1 0 N
+C 80 -50 20 2 1 0 N
+C 80 50 20 2 1 0 N
+S -150 150 150 -150 1 1 10 f
+S -150 150 150 -150 2 1 10 f
+P 2 1 1 0 -60 -45 93 -4 N
+P 2 1 1 0 -60 55 93 96 N
+P 2 2 1 0 -60 -45 93 -4 N
+P 2 2 1 0 -60 55 93 96 N
+X ~ 1 -300 50 200 R 50 50 1 1 P
+X ~ 2 -300 -50 200 R 50 50 1 1 P
+X ~ 7 300 -50 200 L 50 50 1 1 P
+X ~ 8 300 50 200 L 50 50 1 1 P
+X ~ 3 -300 50 200 R 50 50 2 1 P
+X ~ 4 -300 -50 200 R 50 50 2 1 P
+X ~ 5 300 -50 200 L 50 50 2 1 P
+X ~ 6 300 50 200 L 50 50 2 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

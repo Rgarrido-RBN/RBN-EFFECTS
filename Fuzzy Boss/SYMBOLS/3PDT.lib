@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 3pdt
+#
+DEF 3pdt SW 0 40 Y Y 1 F N
+F0 "SW" 0 -600 50 H V C CNN
+F1 "3pdt" 0 450 50 H V C CNN
+F2 "" 0 -600 50 H I C CNN
+F3 "" 0 -600 50 H I C CNN
+DRAW
+X ~ 1 0 300 100 R 50 50 1 1 P
+X ~ 2 0 200 100 R 50 50 1 1 P
+X ~ 3 0 100 100 R 50 50 1 1 P
+X In 4 0 0 100 R 50 50 1 1 I
+X GND 5 0 -100 100 R 50 50 1 1 W
+X Out 6 0 -200 100 R 50 50 1 1 O
+X B.In 7 0 -300 100 R 50 50 1 1 I
+X Led 8 0 -400 100 R 50 50 1 1 O
+X B.Out 9 0 -500 100 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

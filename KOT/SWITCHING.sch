@@ -1,0 +1,288 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "TONE KNIGHT"
+Date "2020-03-21"
+Rev "REV0"
+Comp "RBN EFFECTS"
+Comment1 "Rubén Garrido Alonso"
+Comment2 "Montcada, Valencia"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 3PDT:3pdt SW2
+U 1 1 5E971700
+P 5350 3100
+F 0 "SW2" H 5769 3061 50  0000 L CNN
+F 1 "3pdt" H 5769 2970 50  0000 L CNN
+F 2 "3PDT:3PDT" H 5350 2500 50  0001 C CNN
+F 3 "" H 5350 2500 50  0001 C CNN
+	1    5350 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3PDT:3pdt SW3
+U 1 1 5E973FAE
+P 5350 4400
+F 0 "SW3" H 5769 4361 50  0000 L CNN
+F 1 "3pdt" H 5769 4270 50  0000 L CNN
+F 2 "3PDT:3PDT" H 5350 3800 50  0001 C CNN
+F 3 "" H 5350 3800 50  0001 C CNN
+	1    5350 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2800 5250 2800
+Wire Wire Line
+	5250 2800 5250 3000
+Wire Wire Line
+	5250 3000 5350 3000
+Wire Wire Line
+	5350 4100 5250 4100
+Wire Wire Line
+	5250 4100 5250 4300
+Wire Wire Line
+	5250 4300 5350 4300
+Text GLabel 5100 3400 0    50   Input ~ 0
+IN1
+Text GLabel 5100 3600 0    50   Input ~ 0
+OUT1
+Text GLabel 5100 3500 0    50   Input ~ 0
+SW1
+Text GLabel 5100 4700 0    50   Input ~ 0
+IN2
+Text GLabel 5100 4900 0    50   Input ~ 0
+OUT2
+Text GLabel 5100 4800 0    50   Input ~ 0
+SW2
+Wire Wire Line
+	5100 4700 5300 4700
+Wire Wire Line
+	5100 4800 5350 4800
+Wire Wire Line
+	5100 4900 5350 4900
+Wire Wire Line
+	5100 3600 5350 3600
+Wire Wire Line
+	5100 3500 5350 3500
+Wire Wire Line
+	5100 3400 5300 3400
+Wire Wire Line
+	5350 2900 5300 2900
+Wire Wire Line
+	5300 2900 5300 3400
+Connection ~ 5300 3400
+Wire Wire Line
+	5300 3400 5350 3400
+Wire Wire Line
+	5350 4200 5300 4200
+Wire Wire Line
+	5300 4200 5300 4700
+Connection ~ 5300 4700
+Wire Wire Line
+	5300 4700 5350 4700
+Text GLabel 5100 3300 0    50   Input ~ 0
+COMMON
+Text GLabel 5100 4400 0    50   Input ~ 0
+COMMON
+Wire Wire Line
+	5100 3300 5350 3300
+Wire Wire Line
+	5100 4400 5350 4400
+Text GLabel 5100 3100 0    50   Input ~ 0
+JACK_IN
+Text GLabel 5100 4600 0    50   Input ~ 0
+JACK_OUT
+Wire Wire Line
+	5100 3100 5350 3100
+Wire Wire Line
+	5100 4600 5350 4600
+$Comp
+L power:GND #PWR0118
+U 1 1 5E977D2E
+P 4550 4550
+F 0 "#PWR0118" H 4550 4300 50  0001 C CNN
+F 1 "GND" H 4555 4377 50  0000 C CNN
+F 2 "" H 4550 4550 50  0001 C CNN
+F 3 "" H 4550 4550 50  0001 C CNN
+	1    4550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5E97927C
+P 4550 3250
+F 0 "#PWR0119" H 4550 3000 50  0001 C CNN
+F 1 "GND" H 4555 3077 50  0000 C CNN
+F 2 "" H 4550 3250 50  0001 C CNN
+F 3 "" H 4550 3250 50  0001 C CNN
+	1    4550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3200 4550 3200
+Wire Wire Line
+	4550 3200 4550 3250
+Wire Wire Line
+	5350 4500 4550 4500
+Wire Wire Line
+	4550 4500 4550 4550
+$Comp
+L FIGHT_OF_TONE:MountingHole_Pad H?
+U 1 1 5E8BFDD9
+P 6850 3500
+AR Path="/5E8BFDD9" Ref="H?"  Part="1" 
+AR Path="/5E970161/5E8BFDD9" Ref="H13"  Part="1" 
+F 0 "H13" V 6900 3700 50  0000 C CNN
+F 1 "IN" V 6900 3300 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 6850 3500 50  0001 C CNN
+F 3 "~" H 6850 3500 50  0001 C CNN
+	1    6850 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E8BFDDF
+P 6850 3700
+AR Path="/5E8BFDDF" Ref="H?"  Part="1" 
+AR Path="/5E970161/5E8BFDDF" Ref="H14"  Part="1" 
+F 0 "H14" V 6900 3900 50  0000 C CNN
+F 1 "OUT" V 6900 3500 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 6850 3700 50  0001 C CNN
+F 3 "~" H 6850 3700 50  0001 C CNN
+	1    6850 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L FIGHT_OF_TONE:MountingHole_Pad H?
+U 1 1 5E8BFDE7
+P 6850 3900
+AR Path="/5E8BFDE7" Ref="H?"  Part="1" 
+AR Path="/5E970161/5E8BFDE7" Ref="H15"  Part="1" 
+F 0 "H15" V 6900 4100 50  0000 C CNN
+F 1 "IN" V 6900 3700 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 6850 3900 50  0001 C CNN
+F 3 "~" H 6850 3900 50  0001 C CNN
+	1    6850 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E8BFDED
+P 6850 4100
+AR Path="/5E8BFDED" Ref="H?"  Part="1" 
+AR Path="/5E970161/5E8BFDED" Ref="H16"  Part="1" 
+F 0 "H16" V 6900 4300 50  0000 C CNN
+F 1 "OUT" V 6900 3900 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 6850 4100 50  0001 C CNN
+F 3 "~" H 6850 4100 50  0001 C CNN
+	1    6850 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E8BFDF5
+P 6850 4300
+AR Path="/5E8BFDF5" Ref="H?"  Part="1" 
+AR Path="/5E970161/5E8BFDF5" Ref="H17"  Part="1" 
+F 0 "H17" V 6900 4500 50  0000 C CNN
+F 1 "9V" V 6900 4100 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 6850 4300 50  0001 C CNN
+F 3 "~" H 6850 4300 50  0001 C CNN
+	1    6850 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E8BFDFB
+P 7500 4300
+AR Path="/5E8BFDFB" Ref="#FLG?"  Part="1" 
+AR Path="/5E970161/5E8BFDFB" Ref="#FLG0104"  Part="1" 
+F 0 "#FLG0104" H 7500 4375 50  0001 C CNN
+F 1 "PWR_FLAG" H 7700 4300 50  0000 C CNN
+F 2 "" H 7500 4300 50  0001 C CNN
+F 3 "~" H 7500 4300 50  0001 C CNN
+	1    7500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4300 7200 4300
+Wire Wire Line
+	7200 4250 7200 4300
+Connection ~ 7200 4300
+Wire Wire Line
+	7200 4300 7500 4300
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E8BFE0B
+P 8100 3500
+AR Path="/5E8BFE0B" Ref="H?"  Part="1" 
+AR Path="/5E970161/5E8BFE0B" Ref="H18"  Part="1" 
+F 0 "H18" V 8150 3700 50  0000 C CNN
+F 1 "GND" V 8150 3300 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 8100 3500 50  0001 C CNN
+F 3 "~" H 8100 3500 50  0001 C CNN
+	1    8100 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 3500 8700 3500
+Text GLabel 7450 3500 2    50   Input ~ 0
+IN1
+Text GLabel 7450 3900 2    50   Input ~ 0
+IN2
+Text GLabel 7450 3700 2    50   Input ~ 0
+OUT1
+Text GLabel 7450 4100 2    50   Input ~ 0
+OUT2
+Wire Wire Line
+	6950 3500 7450 3500
+Wire Wire Line
+	6950 3700 7450 3700
+Wire Wire Line
+	6950 3900 7450 3900
+Wire Wire Line
+	6950 4100 7450 4100
+$Comp
+L power:GND #PWR0123
+U 1 1 5E8C66B4
+P 8700 3500
+F 0 "#PWR0123" H 8700 3250 50  0001 C CNN
+F 1 "GND" H 8705 3327 50  0000 C CNN
+F 2 "" H 8700 3500 50  0001 C CNN
+F 3 "" H 8700 3500 50  0001 C CNN
+	1    8700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0124
+U 1 1 5E90CAEC
+P 7200 4250
+F 0 "#PWR0124" H 7200 4100 50  0001 C CNN
+F 1 "+9V" H 7300 4250 50  0000 C CNN
+F 2 "" H 7200 4250 50  0001 C CNN
+F 3 "" H 7200 4250 50  0001 C CNN
+	1    7200 4250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6350 3000 6350 4550
+Wire Notes Line
+	6350 4550 9100 4550
+Wire Notes Line
+	9100 4550 9100 3000
+Wire Notes Line
+	9100 3000 6350 3000
+Wire Notes Line
+	6100 2500 4200 2500
+Wire Notes Line
+	4200 2500 4200 5100
+Wire Notes Line
+	4200 5100 6100 5100
+Wire Notes Line
+	6100 2500 6100 5100
+$EndSCHEMATC
